@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.47cbf683.chunk.css",
-    "main.js": "/my-app/static/js/main.a523d1b3.chunk.js",
-    "main.js.map": "/my-app/static/js/main.a523d1b3.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.ef42851e.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.ef42851e.js.map",
-    "static/js/2.92984dda.chunk.js": "/my-app/static/js/2.92984dda.chunk.js",
-    "static/js/2.92984dda.chunk.js.map": "/my-app/static/js/2.92984dda.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.2825fdf9c7911434dd714498dd96f93e.js": "/my-app/precache-manifest.2825fdf9c7911434dd714498dd96f93e.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.47cbf683.chunk.css.map": "/my-app/static/css/main.47cbf683.chunk.css.map",
-    "static/js/2.92984dda.chunk.js.LICENSE.txt": "/my-app/static/js/2.92984dda.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/my-app/static/media/OpenSans-SemiBold.ba5cde21.ttf",
-    "static/media/App.css": "/my-app/static/media/banner-photo.f5443d74.jpg",
-    "static/media/man-laptop-v1.svg": "/my-app/static/media/man-laptop-v1.3cdf7897.svg"
+    "main.css": "/abz-project/static/css/main.f7407dd5.chunk.css",
+    "main.js": "/abz-project/static/js/main.53e6e1a9.chunk.js",
+    "main.js.map": "/abz-project/static/js/main.53e6e1a9.chunk.js.map",
+    "runtime-main.js": "/abz-project/static/js/runtime-main.e53845ee.js",
+    "runtime-main.js.map": "/abz-project/static/js/runtime-main.e53845ee.js.map",
+    "static/js/2.2b2e39c8.chunk.js": "/abz-project/static/js/2.2b2e39c8.chunk.js",
+    "static/js/2.2b2e39c8.chunk.js.map": "/abz-project/static/js/2.2b2e39c8.chunk.js.map",
+    "index.html": "/abz-project/index.html",
+    "precache-manifest.adb82d680186f9f5f71f64087f2e0066.js": "/abz-project/precache-manifest.adb82d680186f9f5f71f64087f2e0066.js",
+    "service-worker.js": "/abz-project/service-worker.js",
+    "static/css/main.f7407dd5.chunk.css.map": "/abz-project/static/css/main.f7407dd5.chunk.css.map",
+    "static/js/2.2b2e39c8.chunk.js.LICENSE.txt": "/abz-project/static/js/2.2b2e39c8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/abz-project/static/media/banner-photo.f5443d74.jpg",
+    "static/media/man-laptop-v1.svg": "/abz-project/static/media/man-laptop-v1.3cdf7897.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef42851e.js",
-    "static/js/2.92984dda.chunk.js",
-    "static/css/main.47cbf683.chunk.css",
-    "static/js/main.a523d1b3.chunk.js"
+    "static/js/runtime-main.e53845ee.js",
+    "static/js/2.2b2e39c8.chunk.js",
+    "static/css/main.f7407dd5.chunk.css",
+    "static/js/main.53e6e1a9.chunk.js"
   ]
 }
