@@ -4,12 +4,11 @@ export const usersSlice = createSlice({
   name: "users",
   initialState: [],
   reducers: {
-    // addContact: (state, action) => [...state, action.payload],
-    // deleteContact: (state, action) =>
-    //   state.filter(contact => contact.id !== action.payload),
+    userRegistrationStarted: (state, action) => [...state],
+    userRegistrationSuccess: (state, action) => console.log(action.payload),
     getUsersStarted: (state, action) => [...state],
-    getUsersSuccess: (state, action) => action.payload,
-    // getItemsFailure: (state, action) => [...state],
+    getUsersSuccess: (state, action) => [...state, ...action.payload.users],
+    updateUsersSuccess: (state, action) => action.payload.users,
     // deleteUsersStarted: (state, action) => [...state],
     // deleteContactsSuccess: (state, action) =>
     //   state.filter((contact) => contact.id !== action.payload),

@@ -1,0 +1,12 @@
+p,
+h1,
+h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p:hover,
+h1:hover,
+h2:hover {
+  overflow: visible;
+}

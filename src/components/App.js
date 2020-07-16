@@ -3,7 +3,9 @@ import Header from "./Header/Header";
 import Requirements from "./Banner/Banner";
 import AboutMe from "./AboutMe/AboutMe";
 import Users from "./Users/UsersContainer";
-import "../sass/App.scss";
+import RegisterForm from "./RegisterForm/RegisterForm";
+import Footer from "./Footer/Footer";
+// import "../sass/App.scss";
 
 const App = () => (
   <Fragment>
@@ -11,6 +13,8 @@ const App = () => (
     <Requirements />
     <AboutMe />
     <Users />
+    <RegisterForm />
+    <Footer />
   </Fragment>
 );
 

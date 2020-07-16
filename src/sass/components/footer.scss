@@ -1,0 +1,11 @@
+.footer-container {
+  border-top: 1px solid #ececec;
+  background-color: #ffffff;
+  height: 53px;
+}
+
+.footer-text {
+  color: #4c4b4b;
+  text-align: center;
+  @extend %paragraph1;
+}

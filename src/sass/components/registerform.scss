@@ -1,0 +1,178 @@
+.reg-container {
+  background-color: $primary-background-color;
+  padding-top: 153px;
+}
+
+.reg-header {
+  color: $primary-headers-color;
+  text-align: center;
+  @extend %heading1-desktop;
+  line-height: 61px;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.reg-text {
+  color: #4c4b4b;
+  text-align: center;
+  width: 446px;
+  margin: 0 auto 33px;
+  @extend %paragraph1;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  width: 467px;
+  margin: 0 auto;
+}
+
+.reg-form-label {
+  color: $primary-headers-color;
+  font-family: "PT Sans";
+  font-size: $main-font-size;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.reg-form-label-btn {
+  margin-bottom: 40px;
+}
+
+.reg-form-input {
+  width: 441px;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  padding: 13px;
+  color: #b2b9c0;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #ffffff;
+}
+.reg-form-input:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.reg-form-input:last-of-type {
+  margin-bottom: 8px;
+}
+
+.reg-form-input-text {
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 24px;
+}
+
+.ref-form-radiobtn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.ref-form-radiobtn-label {
+  margin-bottom: 22px;
+  color: #212529;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.ref-form-radiobtn-item {
+  margin-right: 9px;
+}
+
+.fileContainer {
+  width: 467px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.fileContainer input {
+  display: none;
+}
+
+.errorsContainer {
+  display: none;
+}
+
+.fileContainer p {
+  //   display: block;
+  width: 362px;
+  height: 16px;
+  margin: 0;
+  padding: 11px;
+  border: none;
+  color: #b2b9c0;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.fileContainer button {
+  width: 83px;
+  height: 38px;
+
+  //   border: 1px solid #d4d9de;
+  border: none;
+  background-color: #f8f7f5;
+}
+
+.fileContainer .chooseFileButton {
+  width: 83px;
+  height: 38px;
+  border: none;
+  background-color: #f8f7f5;
+  border-radius: 0 4px 4px 0;
+
+  color: #212529;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.ref-form-btn {
+  margin: 0 auto;
+  width: 210px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  background-color: $primary-color;
+  margin-bottom: 158px;
+  cursor: pointer;
+
+  color: #fefefe;
+  font-family: "Open Sans - Semibold";
+  $main-font-size: 16px;
+  font-weight: 400;
+}
+
+.valid {
+  border-color: green;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.valid .fileContainer {
+  border-color: green;
+  outline-color: red;
+}

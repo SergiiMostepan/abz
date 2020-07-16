@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const Banner = () => (
   <section className={"banner-container"}>
@@ -17,7 +17,9 @@ const Banner = () => (
           </p>
         </div>
         <div className={"banner-btn"}>
-          <a>Sing up now</a>
+          <a href="#registerForm">
+            <p>Sing up now</p>
+          </a>
         </div>
       </div>
     </div>

@@ -50,6 +50,9 @@
 }
 
 .aboutme-main-info-button {
+}
+.aboutme-main-info-button a {
+  text-decoration: none;
   font-family: $main-font-stack;
   color: $primary-color;
   font-size: $main-font-size;

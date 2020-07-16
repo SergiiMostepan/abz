@@ -2,8 +2,11 @@
 @import "helpers/placeholders";
 
 /* Components */
+@import "components/global.scss";
 @import "components/header";
 @import "components/banner.scss";
 @import "components/aboutMe.scss";
 @import "components/users.scss";
+@import "components/registerform.scss";
+@import "components/footer.scss";
 @import "normalize";

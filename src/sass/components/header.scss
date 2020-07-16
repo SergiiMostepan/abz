@@ -64,6 +64,10 @@
   color: $primary-headers-color;
 }
 
-.header-menu-text-avtive {
+.header-menu-text-avtive a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $primary-headers-color;
   color: #1b4a8a;
+  margin-right: 30px;
 }

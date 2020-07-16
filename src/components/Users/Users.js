@@ -1,14 +1,24 @@
 import React, { Component } from "react";
 
 class Users extends Component {
+  state = { page: 1 };
+
   componentDidMount() {
     this.props.getUsers();
-    // console.log(this.props.usersState);
   }
 
+  hendleLoadMoreUsers = () => {
+    this.setState((prevState) => {
+      return {
+        page: (prevState.page += 1),
+      };
+    });
+    setTimeout(() => this.props.getUsers(this.state.page), 1);
+  };
+
   render() {
-    const users = this.props.usersState.users;
-    console.log(users);
+    // console.log(this.props.pageState);
+    const users = this.props.usersState;
     return (
       <section className={"users-section"} id="users">
         <div className={"users-container"}>
@@ -24,7 +34,7 @@ class Users extends Component {
                     <img
                       className={"users-info-image"}
                       src={user.photo}
-                      alt="user photo"
+                      alt="user img"
                     ></img>
                   </div>
                   <h2 className={"users-info-name"}>{user.name}</h2>
@@ -41,9 +51,18 @@ class Users extends Component {
               <div> No content</div>
             )}
           </div>
-          <div className={"users-btn-container"}>
-            <button className={"users-btn"}>Show more</button>
-          </div>
+          {this.props.pageState !== this.state.page ? (
+            <div className={"users-btn-container"}>
+              <button
+                className={"users-btn"}
+                onClick={this.hendleLoadMoreUsers}
+              >
+                Show more
+              </button>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </section>
     );

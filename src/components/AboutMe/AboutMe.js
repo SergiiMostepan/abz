@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const AboutMe = () => (
   <section className={"aboutme-section"} id="aboutMe">
@@ -10,7 +10,7 @@ const AboutMe = () => (
             src={require("../../images/man-laptop-v1.svg")}
             width="339"
             height="285"
-            alt="image description"
+            alt="img description"
           />
         </div>
         <div className={"aboutme-main-info"}>
@@ -31,7 +31,7 @@ const AboutMe = () => (
             </p>
           </div>
           <div className={"aboutme-main-info-button"}>
-            <a>Sing up now</a>
+            <a href="#registerForm">Sing up now</a>
           </div>
         </div>
       </div>
