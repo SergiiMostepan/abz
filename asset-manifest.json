@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/abz-project/static/css/main.72a69f2e.chunk.css",
-    "main.js": "/abz-project/static/js/main.4f386579.chunk.js",
-    "main.js.map": "/abz-project/static/js/main.4f386579.chunk.js.map",
+    "main.js": "/abz-project/static/js/main.d0cbe3f7.chunk.js",
+    "main.js.map": "/abz-project/static/js/main.d0cbe3f7.chunk.js.map",
     "runtime-main.js": "/abz-project/static/js/runtime-main.e53845ee.js",
     "runtime-main.js.map": "/abz-project/static/js/runtime-main.e53845ee.js.map",
     "static/css/2.2ce93ba3.chunk.css": "/abz-project/static/css/2.2ce93ba3.chunk.css",
     "static/js/2.611c5ada.chunk.js": "/abz-project/static/js/2.611c5ada.chunk.js",
     "static/js/2.611c5ada.chunk.js.map": "/abz-project/static/js/2.611c5ada.chunk.js.map",
     "index.html": "/abz-project/index.html",
-    "precache-manifest.536e82a5020fd115011a05060cb83751.js": "/abz-project/precache-manifest.536e82a5020fd115011a05060cb83751.js",
+    "precache-manifest.c8e2a18543db94f7ff78bf201b65f372.js": "/abz-project/precache-manifest.c8e2a18543db94f7ff78bf201b65f372.js",
     "service-worker.js": "/abz-project/service-worker.js",
     "static/css/2.2ce93ba3.chunk.css.map": "/abz-project/static/css/2.2ce93ba3.chunk.css.map",
     "static/css/main.72a69f2e.chunk.css.map": "/abz-project/static/css/main.72a69f2e.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.2ce93ba3.chunk.css",
     "static/js/2.611c5ada.chunk.js",
     "static/css/main.72a69f2e.chunk.css",
-    "static/js/main.4f386579.chunk.js"
+    "static/js/main.d0cbe3f7.chunk.js"
   ]
 }
