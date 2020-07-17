@@ -5,7 +5,8 @@ import AboutMe from "./AboutMe/AboutMe";
 import Users from "./Users/UsersContainer";
 import RegisterForm from "./RegisterForm/RegisterForm";
 import Footer from "./Footer/Footer";
-// import "../sass/App.scss";
+
+import "../sass/App.scss";
 
 const App = () => (
   <Fragment>

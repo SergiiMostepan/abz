@@ -5,6 +5,7 @@ import { usersSlice } from "./usersReducer/userReducers";
 import { pageSlice } from "./usersReducer/pageReducer";
 import { positionSlice } from "./usersReducer/positionReducer";
 import { tokenSlice } from "./usersReducer/tokenRuducer";
+import { registerSlice } from "./usersReducer/userReducers";
 import { errorSlice } from "./errorReducers/errorReducers";
 
 const rootReducer = combineReducers({
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   pageState: pageSlice.reducer,
   positionState: positionSlice.reducer,
   tokenState: tokenSlice.reducer,
+  registerState: registerSlice.reducer,
   errorState: errorSlice.reducer,
 });
 

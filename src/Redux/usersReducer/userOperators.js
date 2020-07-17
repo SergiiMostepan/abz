@@ -20,7 +20,7 @@ export const getUsers = (dispatch, page = "1") => {
   };
 };
 
-export const registrateUser = (dispatch, userData, token) => {
+export const registerUser = (dispatch, userData, token) => {
   return (dispatch) => {
     dispatch(usersSlice.actions.userRegistrationStarted());
     axios({
@@ -31,6 +31,7 @@ export const registrateUser = (dispatch, userData, token) => {
     })
       .then((res) => {
         dispatch(usersSlice.actions.userRegistrationSuccess(res.data));
+        dispatch(updateUsers());
       })
       .catch((err) => {
         dispatch(errorSlice.actions.getUsersError(err));

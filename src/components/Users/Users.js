@@ -7,13 +7,18 @@ class Users extends Component {
     this.props.getUsers();
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.page !== this.state.page) {
+      this.props.getUsers(this.state.page);
+    }
+  }
+
   hendleLoadMoreUsers = () => {
     this.setState((prevState) => {
       return {
-        page: (prevState.page += 1),
+        page: prevState.page + 1,
       };
     });
-    setTimeout(() => this.props.getUsers(this.state.page), 1);
   };
 
   render() {
@@ -51,7 +56,7 @@ class Users extends Component {
               <div> No content</div>
             )}
           </div>
-          {this.props.pageState !== this.state.page ? (
+          {this.props.pageState !== this.state.page && (
             <div className={"users-btn-container"}>
               <button
                 className={"users-btn"}
@@ -60,8 +65,6 @@ class Users extends Component {
                 Show more
               </button>
             </div>
-          ) : (
-            ""
           )}
         </div>
       </section>

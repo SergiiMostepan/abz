@@ -1,5 +1,6 @@
 .aboutme-section {
   background-color: $primary-background-color;
+  padding-bottom: 155px;
 }
 
 .aboutme-container {
@@ -12,6 +13,7 @@
   margin-top: 155px;
   margin-bottom: 61px;
   color: $primary-headers-color;
+  line-height: 62px;
   @extend %heading1-desktop;
 }
 

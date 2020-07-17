@@ -1,24 +1,23 @@
 import { connect } from "react-redux";
 import { getPosition } from "../../Redux/usersReducer/positionOperstors";
-import { getToken } from "../../Redux/usersReducer/tokenOperator";
+// import { getToken } from "../../Redux/usersReducer/tokenOperator";
 import {
-  registrateUser,
-  updateUsers,
+  registerUser,
+  // updateUsers,
 } from "../../Redux/usersReducer/userOperators";
 import Form from "./Form";
 
-const MSTP = (state) => ({
+const mapStateToProps = (state) => ({
   positionState: state.positionState,
-  tokenState: state.tokenState,
+  // tokenState: state.tokenState,
 });
 
-const MDTP = (dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
   getPositions: () => dispatch(getPosition()),
-  getToken: () => dispatch(getToken()),
-  updateUsers: () => dispatch(updateUsers()),
-
-  registrateUser: (userData, token) =>
-    dispatch(registrateUser(dispatch, userData, token)),
+  // getToken: () => dispatch(getToken()),
+  // updateUsers: () => dispatch(updateUsers()),
+  registerUser: (userData, token) =>
+    dispatch(registerUser(dispatch, userData, token)),
 });
 
-export default connect(MSTP, MDTP)(Form);
+export default connect(mapStateToProps, mapDispatchToProps)(Form);

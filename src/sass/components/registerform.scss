@@ -162,6 +162,9 @@
   font-family: "Open Sans - Semibold";
   $main-font-size: 16px;
   font-weight: 400;
+  &:hover {
+    background-color: #d24335;
+  }
 }
 
 .valid {
@@ -172,7 +175,16 @@
   border-color: red;
 }
 
+.invalid .fileContainer {
+  border-color: red;
+}
+
+.invalid .fileContainer p {
+  border-right: 1px solid red;
+  // border-color: red;
+}
+
 .valid .fileContainer {
   border-color: green;
-  outline-color: red;
+  // outline-color: red;
 }

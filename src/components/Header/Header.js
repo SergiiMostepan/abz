@@ -4,7 +4,7 @@ class Header extends Component {
   state = {
     activeBtn: "",
   };
-  hendleActiveBtn = (e) => {
+  handleActiveBtn = (e) => {
     this.setState({ activeBtn: e.target.name });
   };
 
@@ -32,7 +32,7 @@ class Header extends Component {
                 <a
                   href="#aboutMe"
                   name="AboutMe"
-                  onClick={(e) => this.hendleActiveBtn(e)}
+                  onClick={(e) => this.handleActiveBtn(e)}
                 >
                   About me
                 </a>
@@ -47,7 +47,7 @@ class Header extends Component {
                 <a
                   href="#pageHeader"
                   name="Relationships"
-                  onClick={(e) => this.hendleActiveBtn(e)}
+                  onClick={(e) => this.handleActiveBtn(e)}
                 >
                   Relationships
                 </a>
@@ -62,7 +62,7 @@ class Header extends Component {
                 <a
                   href="#pageHeader"
                   name="Requirements"
-                  onClick={(e) => this.hendleActiveBtn(e)}
+                  onClick={(e) => this.handleActiveBtn(e)}
                 >
                   Requirements
                 </a>
@@ -77,7 +77,7 @@ class Header extends Component {
                 <a
                   href="#users"
                   name="Users"
-                  onClick={(e) => this.hendleActiveBtn(e)}
+                  onClick={(e) => this.handleActiveBtn(e)}
                 >
                   Users
                 </a>
@@ -92,7 +92,7 @@ class Header extends Component {
                 <a
                   href="#registerForm"
                   name="SingUp"
-                  onClick={(e) => this.hendleActiveBtn(e)}
+                  onClick={(e) => this.handleActiveBtn(e)}
                 >
                   Sign Up
                 </a>
