@@ -1,6 +1,6 @@
 import axios from "axios";
-import { tokenSlice } from "./tokenRuducer";
-import { errorSlice } from "../errorReducers/errorReducers";
+// import { tokenSlice } from "./tokenRuducer";
+// import { errorSlice } from "../errorReducers/errorReducers";
 
 export const getToken = async () => {
   // return (dispatch) => {

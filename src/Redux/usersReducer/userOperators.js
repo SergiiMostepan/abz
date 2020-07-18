@@ -1,5 +1,5 @@
 import axios from "axios";
-import { usersSlice } from "./userReducers";
+import { usersSlice, registerSlice } from "./userReducers";
 import { errorSlice } from "../errorReducers/errorReducers";
 import { pageSlice } from "../usersReducer/pageReducer";
 
@@ -22,7 +22,8 @@ export const getUsers = (dispatch, page = "1") => {
 
 export const registerUser = (dispatch, userData, token) => {
   return (dispatch) => {
-    dispatch(usersSlice.actions.userRegistrationStarted());
+    // dispatch(usersSlice.actions.userRegistrationStarted());
+    dispatch(registerSlice.actions.userRegistrationStarted());
     axios({
       method: "post",
       url: "https://frontend-test-assignment-api.abz.agency/api/v1/users",
@@ -30,12 +31,18 @@ export const registerUser = (dispatch, userData, token) => {
       headers: { "content-type": "multipart/form-data", Token: token },
     })
       .then((res) => {
-        dispatch(usersSlice.actions.userRegistrationSuccess(res.data));
+        // dispatch(usersSlice.actions.userRegistrationSuccess(res.data));
+        dispatch(
+          registerSlice.actions.userRegistrationSuccess(res.data.success)
+        );
         dispatch(updateUsers());
       })
       .catch((err) => {
         dispatch(errorSlice.actions.getUsersError(err));
       });
+    // .finally(() => {
+    //   dispatch(registerSlice.actions.userRegistrationStatusClear());
+    // });
   };
 };
 

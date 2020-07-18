@@ -5,29 +5,19 @@ import * as Yup from "yup";
 import { getToken } from "../../Redux/usersReducer/tokenOperator";
 
 class UserForm extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.onDrop = this.onDrop.bind(this);
-  // }
   state = {
-    // file: null,
-    // imagePreviewUrl: "",
     picture: "",
     isClicked: false,
   };
 
   componentDidMount() {
     this.props.getPositions();
-    // this.props.getToken();
   }
 
   onDrop = ([picture]) => this.setState({ picture });
 
   handleClickBtn = () => {
     this.setState({ isClicked: true });
-    // if (Object.keys(errors).length === 0) {
-    //   handleReset();
-    // }
   };
 
   handleClearPicture = () => {
@@ -55,7 +45,6 @@ class UserForm extends Component {
   });
 
   render() {
-    // console.log(this.state);
     return (
       <Formik
         initialValues={{
@@ -67,7 +56,7 @@ class UserForm extends Component {
         validationSchema={this.SignupSchema}
         onSubmit={async (values, handleReset) => {
           const token = await getToken();
-
+          console.log(token);
           const formData = new FormData();
           formData.append("position_id", +values.picked);
           formData.append("name", values.userName);

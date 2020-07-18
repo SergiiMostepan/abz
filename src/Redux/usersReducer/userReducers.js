@@ -4,8 +4,6 @@ export const usersSlice = createSlice({
   name: "users",
   initialState: [],
   reducers: {
-    userRegistrationStarted: (state, action) => [...state],
-    userRegistrationSuccess: (state, action) => console.log(action.payload),
     getUsersStarted: (state, action) => [...state],
     getUsersSuccess: (state, action) => [...state, ...action.payload.users],
     updateUsersSuccess: (state, action) => action.payload.users,
@@ -17,9 +15,10 @@ export const usersSlice = createSlice({
 
 export const registerSlice = createSlice({
   name: "register",
-  initialState: "",
+  initialState: false,
   reducers: {
-    userRegistrationStarted: (state, action) => [...state],
-    userRegistrationSuccess: (state, action) => console.log(action.payload),
+    userRegistrationStarted: (state, action) => false,
+    userRegistrationSuccess: (state, action) => action.payload,
+    userRegistrationStatusClear: (state, action) => false,
   },
 });

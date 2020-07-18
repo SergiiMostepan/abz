@@ -1,14 +1,22 @@
 import React, { Component } from "react";
+import HeaderMobileMenu from "./HeaderMobileMenu";
 
 class Header extends Component {
   state = {
     activeBtn: "",
+    isOpen: false,
   };
   handleActiveBtn = (e) => {
     this.setState({ activeBtn: e.target.name });
   };
 
+  onClickMenu = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+    console.log(this.state.isOpen);
+  };
+
   render() {
+    const { isOpen } = this.state;
     return (
       <header className={"header-container-bg"} id="pageHeader">
         <div className={"header-container header-menu-text"}>
@@ -21,6 +29,14 @@ class Header extends Component {
             <div className={"header-logo-text"}>testtask</div>
           </div>
           <nav>
+            <div className={"header-menu-burger"}>
+              <img
+                onClick={this.onClickMenu}
+                src={require("../../images/menu-icon.svg")}
+                alt="img description"
+              />
+            </div>
+            <HeaderMobileMenu isOpen={isOpen} onClick={this.onClickMenu} />
             <ul className={"header-menu-list"}>
               <li
                 className={

@@ -31,30 +31,32 @@ class Users extends Component {
           <p className={"users-text"}>
             Attention! Sorting users by registration date
           </p>
-          <div className={"users"}>
-            {users ? (
-              users.map((user) => (
-                <div key={user.id} className={"users-info"}>
-                  <div className={"users-info-image-container"}>
-                    <img
-                      className={"users-info-image"}
-                      src={user.photo}
-                      alt="user img"
-                    ></img>
+          <div className={"users-flex-container"}>
+            <div className={"users"}>
+              {users ? (
+                users.map((user) => (
+                  <div key={user.id} className={"users-info"}>
+                    <div className={"users-info-image-container"}>
+                      <img
+                        className={"users-info-image"}
+                        src={user.photo}
+                        alt="user img"
+                      ></img>
+                    </div>
+                    <h2 className={"users-info-name"}>{user.name}</h2>
+                    <div className={"users-info-details"}>
+                      <p className={"users-info-details-items"}>
+                        {user.position}
+                      </p>
+                      <p className={"users-info-details-items"}>{user.email}</p>
+                      <p className={"users-info-details-items"}>{user.phone}</p>
+                    </div>
                   </div>
-                  <h2 className={"users-info-name"}>{user.name}</h2>
-                  <div className={"users-info-details"}>
-                    <p className={"users-info-details-items"}>
-                      {user.position}
-                    </p>
-                    <p className={"users-info-details-items"}>{user.email}</p>
-                    <p className={"users-info-details-items"}>{user.phone}</p>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div> No content</div>
-            )}
+                ))
+              ) : (
+                <div> No content</div>
+              )}
+            </div>
           </div>
           {this.props.pageState !== this.state.page && (
             <div className={"users-btn-container"}>

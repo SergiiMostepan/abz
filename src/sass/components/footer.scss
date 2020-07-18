@@ -9,3 +9,9 @@
   text-align: center;
   @extend %paragraph1;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    height: 60px;
+  }
+}
