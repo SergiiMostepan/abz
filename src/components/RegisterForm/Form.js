@@ -10,7 +10,7 @@ class UserForm extends Component {
   state = {
     picture: "",
     isClicked: false,
-    isOpen: true,
+    isOpen: false,
   };
 
   componentDidMount() {
@@ -25,7 +25,16 @@ class UserForm extends Component {
 
   handleClickBtn = () => {
     this.setState({ isClicked: true });
-    setTimeout(() => this.props.defaultError(), 4000);
+
+    setTimeout(() => {
+      if (this.props.errorState) {
+        this.setState({ isOpen: true });
+      }
+    }, 850);
+
+    setTimeout(() => {
+      this.props.defaultError();
+    }, 4000);
   };
 
   handleClearPicture = () => {
@@ -53,9 +62,6 @@ class UserForm extends Component {
   });
 
   render() {
-    // if (this.props.errorState) {
-    //   console.log(this.props.errorState);
-    // }
     return (
       <>
         <Formik
@@ -82,8 +88,6 @@ class UserForm extends Component {
               this.handleClearPicture();
               this.handleClearBtnStatus();
             }
-
-            console.log(this.props.errorState);
           }}
         >
           {({ errors, touched }) => {
@@ -202,7 +206,7 @@ class UserForm extends Component {
           }}
         </Formik>
         <Snackbar
-          open={this.props.errorState ? this.state.isOpen : false}
+          open={this.state.isOpen}
           autoHideDuration={3000}
           onClose={this.handleClose}
           anchorOrigin={{ horizontal: "right", vertical: "top" }}
