@@ -6,6 +6,7 @@ export const errorSlice = createSlice({
   reducers: {
     getUsersError: (state, action) => action.payload,
     registerError: (state, action) => action.payload,
+    registerErrorToNull: (state, action) => null,
     positionError: (state, action) => action.payload,
   },
 });

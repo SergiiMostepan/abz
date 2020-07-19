@@ -66,7 +66,7 @@
 
 .header-menu-text {
   font-family: $main-font-stack;
-  font-size: $main-font-size;
+  font-size: 14px;
   line-height: 60px;
   color: $primary-headers-color;
 }
@@ -75,6 +75,7 @@
   cursor: pointer;
   text-decoration: none;
   color: $primary-headers-color;
+  font-size: 14px;
   color: #1b4a8a;
   margin-right: 30px;
 }

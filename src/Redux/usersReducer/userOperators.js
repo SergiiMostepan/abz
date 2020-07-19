@@ -32,11 +32,14 @@ export const registerUser = (dispatch, userData, token) => {
       .then((res) => {
         dispatch(
           registerSlice.actions.userRegistrationSuccess(res.data.success)
+          // registerSlice.actions.userRegistrationSuccess(res.message)
         );
+
         dispatch(updateUsers());
       })
       .catch((err) => {
-        dispatch(errorSlice.actions.registerError(err.message));
+        const { response: { data: { message } = {} } = {} } = err;
+        dispatch(errorSlice.actions.registerError(message));
       });
   };
 };

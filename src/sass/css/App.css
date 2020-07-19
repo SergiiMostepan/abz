@@ -94,7 +94,7 @@ h2 {
 
 .header-menu-text {
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 60px;
   color: #212529; }
 
@@ -102,6 +102,7 @@ h2 {
   cursor: pointer;
   text-decoration: none;
   color: #212529;
+  font-size: 14px;
   color: #1b4a8a;
   margin-right: 30px; }
 
