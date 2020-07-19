@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29c9409e436db4fcd8d2582b5d0b0f84",
+    "revision": "7a328f7b7ea156558d8c59fb248000cd",
     "url": "/abz-project/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abz-project/static/css/2.2ce93ba3.chunk.css"
   },
   {
-    "revision": "2cbdf79a70eafa2ee8cb",
-    "url": "/abz-project/static/css/main.89d807ce.chunk.css"
+    "revision": "6de19262ca509c9c0122",
+    "url": "/abz-project/static/css/main.59bdc5b3.chunk.css"
   },
   {
     "revision": "8f33b9374f4352ac2942",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abz-project/static/js/2.cfb7f3c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2cbdf79a70eafa2ee8cb",
+    "revision": "6de19262ca509c9c0122",
     "url": "/abz-project/static/js/main.79806465.chunk.js"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abz-project/static/media/UploadIcon.1cedb6e9.svg"
   },
   {
-    "revision": "f5443d74025f2a6069e0ca0142c08a05",
-    "url": "/abz-project/static/media/banner-photo.f5443d74.jpg"
+    "revision": "76b77e01a748b9529e5f448460a57763",
+    "url": "/abz-project/static/media/banner-photo.76b77e01.jpg"
   },
   {
     "revision": "3cdf78971c869b16b95152be7b6922e5",
