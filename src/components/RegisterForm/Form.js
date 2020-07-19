@@ -45,6 +45,9 @@ class UserForm extends Component {
   });
 
   render() {
+    if (this.props.errorState) {
+      console.log(this.props.errorState);
+    }
     return (
       <Formik
         initialValues={{
@@ -56,7 +59,7 @@ class UserForm extends Component {
         validationSchema={this.SignupSchema}
         onSubmit={async (values, handleReset) => {
           const token = await getToken();
-          console.log(token);
+
           const formData = new FormData();
           formData.append("position_id", +values.picked);
           formData.append("name", values.userName);
@@ -148,28 +151,33 @@ class UserForm extends Component {
                   </label>
                 ))}
               </div>
-              <label className={"reg-form-label reg-form-label-btn"}>
+              <label
+                htmlFor="upload"
+                className={"reg-form-label reg-form-label-btn"}
+              >
                 Photo
-                <ImageUploader
-                  className={
-                    !this.state.picture && this.state.isClicked ? "invalid" : ""
-                  }
-                  buttonText="Browse"
-                  singleImage={true}
-                  withLabel={true}
-                  label={
-                    this.state.picture
-                      ? fileName
-                      : !this.state.picture && this.state.isClicked
-                      ? "No file chosen"
-                      : "Upload your photo"
-                  }
-                  withIcon={false}
-                  onChange={this.onDrop}
-                  imgExtension={[".jpg", ".jpeg"]}
-                  maxFileSize={5242880}
-                />
               </label>
+              <ImageUploader
+                id="upload"
+                className={
+                  !this.state.picture && this.state.isClicked ? "invalid" : ""
+                }
+                buttonText="Browse"
+                singleImage={true}
+                withLabel={true}
+                label={
+                  this.state.picture
+                    ? fileName
+                    : !this.state.picture && this.state.isClicked
+                    ? "No file chosen"
+                    : "Upload your photo"
+                }
+                withIcon={false}
+                onChange={this.onDrop}
+                imgExtension={[".jpg", ".jpeg"]}
+                maxFileSize={5242880}
+              />
+
               <button
                 className={"ref-form-btn"}
                 onClick={this.handleClickBtn}

@@ -1,4 +1,18 @@
 import React, { Component } from "react";
+import { Tooltip } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
+
+const styles = {
+  tooltip: {
+    boxShadow: "3px 3px 8px rgba(0, 0, 0, 0.3)",
+    borderRadius: "4px",
+    backgroundColor: "#000000",
+    color: "rgba(254, 254, 254, 0.8)",
+    fontSize: "14px",
+  },
+};
+
+const CustomTooltip = withStyles(styles)(Tooltip);
 
 class Users extends Component {
   state = { page: 1 };
@@ -22,7 +36,6 @@ class Users extends Component {
   };
 
   render() {
-    // console.log(this.props.pageState);
     const users = this.props.usersState;
     return (
       <section className={"users-section"} id="users">
@@ -48,7 +61,11 @@ class Users extends Component {
                       <p className={"users-info-details-items"}>
                         {user.position}
                       </p>
-                      <p className={"users-info-details-items"}>{user.email}</p>
+                      <CustomTooltip title={user.email}>
+                        <p className={"users-info-details-items"}>
+                          {user.email}
+                        </p>
+                      </CustomTooltip>
                       <p className={"users-info-details-items"}>{user.phone}</p>
                     </div>
                   </div>

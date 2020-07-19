@@ -1,7 +1,7 @@
 .reg-container {
   background-color: $primary-background-color;
-  padding-top: 153px;
-  padding-bottom: 158px;
+  padding-top: 147px;
+  padding-bottom: 164px;
 }
 
 .reg-header {
@@ -38,11 +38,11 @@
 }
 
 .reg-form-label-btn {
-  margin-bottom: 40px;
+  margin-bottom: 7px;
 }
 
 .reg-form-input {
-  height: 15px;
+  height: 10px;
   border-radius: 4px;
   border: 1px solid #ced4da;
   background-color: #ffffff;
@@ -55,7 +55,7 @@
   background-color: #ffffff;
 }
 .reg-form-input:not(:last-of-type) {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .reg-form-input:last-of-type {
@@ -67,16 +67,16 @@
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
-  margin: 0 0 24px;
+  margin: 0 0 21px;
 }
 
 .ref-form-radiobtn {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 .ref-form-radiobtn-label {
-  margin-bottom: 22px;
+  margin-bottom: 13px;
   color: #212529;
   font-family: "PT Sans";
   font-size: 16px;
@@ -85,7 +85,11 @@
 }
 
 .ref-form-radiobtn-item {
-  margin-right: 9px;
+  margin-right: 12px;
+}
+
+.fileUploader {
+  margin-bottom: 38px;
 }
 
 .fileContainer {
@@ -110,7 +114,6 @@
 }
 
 .fileContainer p {
-  //   display: block;
   width: 362px;
   height: 16px;
   margin: 0;
@@ -122,13 +125,14 @@
   font-weight: 400;
   line-height: 16px;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fileContainer button {
   width: 83px;
   height: 38px;
 
-  //   border: 1px solid #d4d9de;
   border: none;
   background-color: #f8f7f5;
 }
@@ -182,22 +186,30 @@
 
 .invalid .fileContainer p {
   border-right: 1px solid red;
-  // border-color: red;
 }
 
 .valid .fileContainer {
   border-color: green;
-  // outline-color: red;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .reg-container {
-    padding-top: 109px;
+    padding-top: 102px;
     padding-bottom: 118px;
   }
 
   .reg-header {
     font-size: 40px;
+  }
+
+  .reg-text {
+    margin-bottom: 29px;
+  }
+
+  .fileContainer .chooseFileButton {
+    &:hover {
+      background-color: #f8f7f5;
+    }
   }
 }
 @media (min-width: 360px) and (max-width: 767px) {
@@ -208,7 +220,7 @@
 
   .reg-header {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 38px;
     width: 304px;
     margin: 0 auto 15px;
   }
@@ -222,11 +234,21 @@
     width: 330px;
   }
 
+  .fileUploader {
+    margin-bottom: 35px;
+  }
+
   .fileContainer {
     width: 328px;
   }
 
   .fileContainer p {
     width: 245px;
+  }
+
+  .fileContainer .chooseFileButton {
+    &:hover {
+      background-color: #f8f7f5;
+    }
   }
 }

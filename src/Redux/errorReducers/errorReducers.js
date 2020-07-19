@@ -5,7 +5,7 @@ export const errorSlice = createSlice({
   initialState: null,
   reducers: {
     getUsersError: (state, action) => action.payload,
-    // deleteContactsError: (state, action) => action.payload,
-    // postContactsError: (state, action) => action.payload,
+    registerError: (state, action) => action.payload,
+    positionError: (state, action) => action.payload,
   },
 });

@@ -11,7 +11,7 @@ export const getPosition = (dispatch) => {
         dispatch(positionSlice.actions.getPositionSuccess(res.data.positions));
       })
       .catch((err) => {
-        dispatch(errorSlice.actions.getUsersError(err));
+        dispatch(errorSlice.actions.positionError(err));
       });
   };
 };

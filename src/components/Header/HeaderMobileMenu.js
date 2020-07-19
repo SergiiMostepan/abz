@@ -38,7 +38,7 @@ class HeaderMobileMenu extends Component {
               }
             >
               <a
-                href="#aboutMe"
+                href="#registerForm"
                 name="AboutMe"
                 onClick={(e) => this.handleActiveBtn(e)}
               >
@@ -53,7 +53,7 @@ class HeaderMobileMenu extends Component {
               }
             >
               <a
-                href="#pageHeader"
+                href="#registerForm"
                 name="Relationships"
                 onClick={(e) => this.handleActiveBtn(e)}
               >
@@ -68,7 +68,7 @@ class HeaderMobileMenu extends Component {
               }
             >
               <a
-                href="#users"
+                href="#registerForm"
                 name="Users"
                 onClick={(e) => this.handleActiveBtn(e)}
               >

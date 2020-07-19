@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "./Redux/store";
 
 import App from "./components/App";
-import "./css/App.css";
+import "./sass/css/App.css";
 
 ReactDOM.render(
   <Provider store={store}>

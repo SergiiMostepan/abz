@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://myusername.github.io/abz-project",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -32,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass src/sass -o src/css"
+    "scss": "node-sass src/sass -o src/sass/css"
   },
   "eslintConfig": {
     "extends": "react-app"

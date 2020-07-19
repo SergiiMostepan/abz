@@ -15,7 +15,6 @@ class Modal extends Component {
   };
 
   render() {
-    // console.log(this.props);
     return (
       <Fragment>
         <ReactModal
@@ -29,7 +28,6 @@ class Modal extends Component {
             <h2 className={"modal-header-container-text"}>Congratulations</h2>
             <button
               className={"modal-header-container-btn"}
-              //   onClick={this.handleCloseModal}
               onClick={this.props.closeModal}
             ></button>
           </div>

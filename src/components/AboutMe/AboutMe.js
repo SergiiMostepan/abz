@@ -8,8 +8,6 @@ const AboutMe = () => (
         <div className={"aboutme-logo"}>
           <img
             src={require("../../images/man-laptop-v1.svg")}
-            // width="339"
-            // height="285"
             alt="img description"
           />
         </div>

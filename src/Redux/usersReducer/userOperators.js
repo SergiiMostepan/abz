@@ -22,7 +22,6 @@ export const getUsers = (dispatch, page = "1") => {
 
 export const registerUser = (dispatch, userData, token) => {
   return (dispatch) => {
-    // dispatch(usersSlice.actions.userRegistrationStarted());
     dispatch(registerSlice.actions.userRegistrationStarted());
     axios({
       method: "post",
@@ -31,18 +30,14 @@ export const registerUser = (dispatch, userData, token) => {
       headers: { "content-type": "multipart/form-data", Token: token },
     })
       .then((res) => {
-        // dispatch(usersSlice.actions.userRegistrationSuccess(res.data));
         dispatch(
           registerSlice.actions.userRegistrationSuccess(res.data.success)
         );
         dispatch(updateUsers());
       })
       .catch((err) => {
-        dispatch(errorSlice.actions.getUsersError(err));
+        dispatch(errorSlice.actions.registerError(err.message));
       });
-    // .finally(() => {
-    //   dispatch(registerSlice.actions.userRegistrationStatusClear());
-    // });
   };
 };
 
