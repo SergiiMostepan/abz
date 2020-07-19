@@ -2,7 +2,6 @@
   "name": "abz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/abz-project",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@reduxjs/toolkit": "^1.4.0",
@@ -27,8 +26,9 @@
     "yup": "^0.29.1"
   },
   "scripts": {
+    "deploygh": "gh-pages -d build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "netlify deploy -p",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
